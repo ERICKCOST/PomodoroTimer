@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PomodoroTimer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" alpha="0.5" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hand-drawn-food-seamless-pattern-sketchn-doodle-stock-rare-images-ideas-floor-tiles-tile-subway.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="sHl-VQ-dCG">
+                                <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pomodoro" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bJt-PW-Cwl">
+                                <rect key="frame" x="26.5" y="32" width="267" height="52"/>
+                                <fontDescription key="fontDescription" name="HiraMinProN-W6" family="Hiragino Mincho ProN" pointSize="52"/>
+                                <color key="textColor" red="0.80518132448196411" green="0.1000785157084465" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7D7-0K-fBd">
+                                <rect key="frame" x="30" y="422" width="75" height="33"/>
+                                <fontDescription key="fontDescription" name="HiraMinProN-W6" family="Hiragino Mincho ProN" pointSize="21"/>
+                                <size key="titleShadowOffset" width="-1" height="1"/>
+                                <state key="normal" title="10 Min">
+                                    <color key="titleColor" red="0.82058042287826538" green="0.22093048691749573" blue="0.20282700657844543" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="almentar10min:" destination="BYZ-38-t0r" eventType="touchUpInside" id="t8a-kD-0Ub"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="93f-jk-hsj">
+                                <rect key="frame" x="122.5" y="372" width="75" height="33"/>
+                                <fontDescription key="fontDescription" name="HiraMinProN-W6" family="Hiragino Mincho ProN" pointSize="21"/>
+                                <size key="titleShadowOffset" width="-1" height="1"/>
+                                <state key="normal" title="25 Min">
+                                    <color key="titleColor" red="0.82058042287826538" green="0.22093048691749573" blue="0.20282700657844543" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="almentar25Min:" destination="BYZ-38-t0r" eventType="touchUpInside" id="f0U-sb-mYo"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AMU-MR-1fT">
+                                <rect key="frame" x="84" y="317" width="21" height="27"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="27" id="04l-GQ-y0P"/>
+                                    <constraint firstAttribute="width" constant="21" id="St2-Nv-gSr"/>
+                                </constraints>
+                                <size key="titleShadowOffset" width="1" height="-2"/>
+                                <state key="normal" image="music-player-pause-lines.png"/>
+                                <connections>
+                                    <action selector="pausar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="J2Z-du-0Zd"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="871cc5a8a5f00c21047fd7342403b4d3-tomato.png" translatesAutoresizingMaskIntoConstraints="NO" id="2ID-h2-Ppi">
+                                <rect key="frame" x="25" y="84" width="270" height="218.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="2ID-h2-Ppi" secondAttribute="height" multiplier="135:109" id="B9z-Of-cQQ"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wOz-8T-YyQ">
+                                <rect key="frame" x="215" y="422" width="75" height="33"/>
+                                <fontDescription key="fontDescription" name="HiraMinProN-W6" family="Hiragino Mincho ProN" pointSize="21"/>
+                                <size key="titleShadowOffset" width="-1" height="1"/>
+                                <state key="normal" title="15 Min">
+                                    <color key="titleColor" red="0.82058042287826538" green="0.22093048691749573" blue="0.20282700657844543" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="almentar15min:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vJr-Mg-T66"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XIj-W4-Hkw">
+                                <rect key="frame" x="215" y="317" width="27" height="27"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="27" id="Dsi-as-UcP"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="27" id="FcS-2h-znC"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="27" id="XmH-PA-EOC"/>
+                                    <constraint firstAttribute="height" constant="27" id="zpJ-66-gEZ"/>
+                                </constraints>
+                                <size key="titleShadowOffset" width="1" height="-2"/>
+                                <state key="normal" image="reload.png"/>
+                                <connections>
+                                    <action selector="reiniciar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RbL-qX-nBL"/>
+                                </connections>
+                            </button>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="60" translatesAutoresizingMaskIntoConstraints="NO" id="d02-nx-Qn2">
+                                <rect key="frame" x="28" y="485" width="264" height="31"/>
+                                <color key="minimumTrackTintColor" red="1" green="0.19606311274509805" blue="0.13968832975898693" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="almentarMinutoAMinuto:" destination="BYZ-38-t0r" eventType="valueChanged" id="d5c-eE-mrY"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00 Min 00 Seg" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gr6-Qo-1a4">
+                                <rect key="frame" x="61.5" y="179.5" width="198" height="29"/>
+                                <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="29"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aw2-o0-nk2">
+                                <rect key="frame" x="144" y="291" width="32" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="32" id="0Rc-nZ-zf0"/>
+                                    <constraint firstAttribute="height" constant="32" id="4dz-2B-hmv"/>
+                                </constraints>
+                                <size key="titleShadowOffset" width="1" height="-2"/>
+                                <state key="normal" image="icon.png"/>
+                                <connections>
+                                    <action selector="iniciar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Koq-nB-g4l"/>
+                                </connections>
+                            </button>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="GCM-5o-nEP">
+                                <rect key="frame" x="46" y="499" width="228" height="2"/>
+                                <color key="progressTintColor" red="1" green="0.19606311269999999" blue="0.13968832980000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="trackTintColor" cocoaTouchSystemColor="darkTextColor"/>
+                            </progressView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="7D7-0K-fBd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="84S-V1-fOO"/>
+                            <constraint firstItem="Gr6-Qo-1a4" firstAttribute="centerX" secondItem="2ID-h2-Ppi" secondAttribute="centerX" id="8ys-L8-aW7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="d02-nx-Qn2" secondAttribute="bottom" constant="53" id="9J0-Ne-6Vp"/>
+                            <constraint firstItem="d02-nx-Qn2" firstAttribute="top" secondItem="7D7-0K-fBd" secondAttribute="bottom" constant="30" id="Bvh-SR-A1Q"/>
+                            <constraint firstItem="sHl-VQ-dCG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="C4B-s3-Je6"/>
+                            <constraint firstItem="XIj-W4-Hkw" firstAttribute="leading" secondItem="wOz-8T-YyQ" secondAttribute="leading" id="FvC-2o-Zvc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2ID-h2-Ppi" secondAttribute="trailing" constant="25" id="GHE-eP-yn9"/>
+                            <constraint firstItem="d02-nx-Qn2" firstAttribute="top" secondItem="wOz-8T-YyQ" secondAttribute="bottom" constant="30" id="H4v-eT-tm3"/>
+                            <constraint firstItem="AMU-MR-1fT" firstAttribute="top" secondItem="aw2-o0-nk2" secondAttribute="bottom" constant="-6" id="HiT-Va-PSK"/>
+                            <constraint firstItem="sHl-VQ-dCG" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="UpO-ou-yQv"/>
+                            <constraint firstItem="sHl-VQ-dCG" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="W4F-hm-fHD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="GCM-5o-nEP" secondAttribute="bottom" constant="67" id="ZIf-XU-lgT"/>
+                            <constraint firstItem="AMU-MR-1fT" firstAttribute="trailing" secondItem="7D7-0K-fBd" secondAttribute="trailing" id="a5t-QP-YPE"/>
+                            <constraint firstItem="sHl-VQ-dCG" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="aXx-lr-Mfw"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="d02-nx-Qn2" secondAttribute="trailing" constant="30" id="beH-fF-kph"/>
+                            <constraint firstItem="2ID-h2-Ppi" firstAttribute="top" secondItem="bJt-PW-Cwl" secondAttribute="bottom" id="d9X-9e-RXW"/>
+                            <constraint firstItem="wOz-8T-YyQ" firstAttribute="top" secondItem="93f-jk-hsj" secondAttribute="bottom" constant="17" id="dtt-BR-uVc"/>
+                            <constraint firstItem="93f-jk-hsj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dzN-jj-WiC"/>
+                            <constraint firstItem="Gr6-Qo-1a4" firstAttribute="top" secondItem="2ID-h2-Ppi" secondAttribute="bottom" constant="-123" id="gVn-Cj-Et7"/>
+                            <constraint firstItem="7D7-0K-fBd" firstAttribute="top" secondItem="AMU-MR-1fT" secondAttribute="bottom" constant="78" id="gWn-PV-CVh"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="GCM-5o-nEP" secondAttribute="trailing" constant="30" id="hxI-Eu-R5e"/>
+                            <constraint firstItem="bJt-PW-Cwl" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="12" id="iCx-nF-OQz"/>
+                            <constraint firstItem="wOz-8T-YyQ" firstAttribute="top" secondItem="XIj-W4-Hkw" secondAttribute="bottom" constant="78" id="jgI-VS-Rtz"/>
+                            <constraint firstItem="d02-nx-Qn2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="onw-Gl-Nst"/>
+                            <constraint firstItem="aw2-o0-nk2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ovp-Q1-pDf"/>
+                            <constraint firstItem="GCM-5o-nEP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="30" id="pgY-mQ-Kwn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wOz-8T-YyQ" secondAttribute="trailing" constant="30" id="ryy-43-dyM"/>
+                            <constraint firstItem="bJt-PW-Cwl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xp2-ju-44C"/>
+                            <constraint firstItem="2ID-h2-Ppi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="zwZ-Zl-nnS"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="botao10" destination="7D7-0K-fBd" id="msg-m4-G2R"/>
+                        <outlet property="botao15" destination="wOz-8T-YyQ" id="5Ll-uM-dS4"/>
+                        <outlet property="botao25" destination="93f-jk-hsj" id="4vu-mC-BPz"/>
+                        <outlet property="btnIniciar" destination="aw2-o0-nk2" id="WHm-ZY-5tq"/>
+                        <outlet property="btnPausar" destination="AMU-MR-1fT" id="7gd-0S-kkd"/>
+                        <outlet property="btnReiniciar" destination="XIj-W4-Hkw" id="49C-zH-KOu"/>
+                        <outlet property="imagemTomate" destination="2ID-h2-Ppi" id="agG-CP-x3f"/>
+                        <outlet property="labelTempo" destination="Gr6-Qo-1a4" id="B1N-u7-rBl"/>
+                        <outlet property="progressContagem" destination="GCM-5o-nEP" id="tXy-59-otb"/>
+                        <outlet property="sliderTempo" destination="d02-nx-Qn2" id="06t-TU-8gO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-804.375" y="-33.802816901408448"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="871cc5a8a5f00c21047fd7342403b4d3-tomato.png" width="512" height="512"/>
+        <image name="hand-drawn-food-seamless-pattern-sketchn-doodle-stock-rare-images-ideas-floor-tiles-tile-subway.jpg" width="1024" height="1024"/>
+        <image name="icon.png" width="32" height="32"/>
+        <image name="music-player-pause-lines.png" width="64" height="64"/>
+        <image name="reload.png" width="64" height="64"/>
+    </resources>
+</document>
